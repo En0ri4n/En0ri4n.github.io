@@ -1,0 +1,103 @@
+body{
+    background-image: url('https://voyage-onirique.com/wp-content/uploads/2020/03/backiee-138908-landscape-1120x630.jpg');
+    background-size: cover;
+}
+
+h1{
+    color: cyan;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    background-color: darkorchid;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    animation-name: divMove;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+div1{
+    background-color: darkorchid;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    animation-name: divMove;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+div2{
+    background-color: darkorchid;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    animation-name: divMove;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+div3{
+    background-color: darkorchid;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    animation-name: divMove;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+p{
+    color: crimson;
+    position: absolute;
+    top: 10cm;
+}
+
+@keyframes divMove {
+    0% {
+        background-color: darkorchid;
+        top: 0vh;
+        left: 0vw;
+    }
+    25% {
+        background-color: green;
+        top: 0vh;
+        left: calc(100vw - 100px);
+    }
+    50% {
+        background-color: blue;
+        top: calc(100vh - 100px);
+        left: calc(100vw - 100px);
+    }
+    75% {
+        background-color: hotpink;
+        top: calc(100vh - 100px);
+        left: 0vw;
+    }
+    100% {
+        background-color: darkorchid;
+        top: 0vh;
+        left: 0vw;
+    }
+  }
