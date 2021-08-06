@@ -8,7 +8,7 @@
             "type": "pwa-msedge",
             "request": "launch",
             "name": "Launch Edge against localhost",
-            "url": "C:\\Users\\Enorian\\Dev\\Web\\Test Web\\index.html",
+            "url": "C:\\Users\\Enorian\\Dev\\Web\\Web-Test\\index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
