@@ -1,132 +1,80 @@
-body{
-    background-image: url('https://voyage-onirique.com/wp-content/uploads/2020/03/backiee-138908-landscape-1120x630.jpg');
+body {
+    background-color: white; /*url('https://voyage-onirique.com/wp-content/uploads/2020/03/backiee-138908-landscape-1120x630.jpg');*/
     background-size: cover;
     background-position-x: left;
     background-position-y: top;
 }
 
-h1{
-    color: cyan;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: max-content;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#bingo-button{
-    background-color: chartreuse;
-    position: relative;
-    display: block;
-    margin: auto;
-    top: 100px;
-    width: 100px;
-}
-
 #box{
     background-color: darkorchid;
-    width: 100px;
-    height: 100px;
+    width: 100vw;
+    height: 0px;
     top: 0px;
     left: 0px;
     position: absolute;
     animation-name: divMove;
     animation-duration: 4s;
-    animation-delay: 1s;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
-.div-text{
-    color: cornflowerblue;
+#closing-box{
+    background-color: black;
+    width: 100vw;
+    height: 0px;
+    top: 100vh;
+    left: 0vw;
+    position: absolute;
+    animation-name: divCloseMove;
+    animation-duration: 3s;
+    animation-delay: 22s;
+    animation-fill-mode: forwards;
+}
+
+#text {
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    top: 40vh;
     margin: auto;
-}
-
-div1{
-    background-color: darkorchid;
-    width: 100px;
-    height: 100px;
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    animation-name: divMove;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-
-div2{
-    background-color: darkorchid;
-    width: 100px;
-    height: 100px;
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    animation-name: divMove;
-    animation-duration: 4s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-
-div3{
-    background-color: darkorchid;
-    width: 100px;
-    height: 100px;
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    animation-name: divMove;
-    animation-duration: 4s;
+    font-size: 80;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: text;
+    animation-duration: 1.5s;
     animation-delay: 4s;
+    animation-iteration-count: calc(2 * 6);
+    animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
 }
 
-.button-link{
-    color: peru;
-    position: absolute;
-    top: 10cm;
-    left: 10cm;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
-}
-
-p{
-    color: crimson;
-    position: absolute;
-    top: 10cm;
+@keyframes divCloseMove {
+    0% {
+        height: 0vh;
+    }
+    100% {
+        background-color: black;
+        top: 0vh;
+        height: 100vh;
+    }
 }
 
 @keyframes divMove {
     0% {
-        background-color: red;
-        top: 0vh;
-        left: 0vw;
-    }
-    25% {
-        background-color: orange;
-        top: 0vh;
-        left: calc(100vw - 100px);
-    }
-    50% {
-        background-color: gold;
-        top: calc(100vh - 100px);
-        left: calc(100vw - 100px);
-    }
-    75% {
-        background-color: rgb(247, 21, 198);
-        top: calc(100vh - 100px);
-        left: 0vw;
+        height: 0vh;
     }
     100% {
-        background-color: red;
-        top: 0vh;
-        left: 0vw;
+        background-color: cyan;
+        height: 100vh;
     }
-  }
+}
+
+@keyframes text {
+    from {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    to {
+        color:white;
+    }
+}

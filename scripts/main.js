@@ -1,25 +1,49 @@
-function getRandomInt(max)
+window.onload = function()
 {
-    return Math.floor(Math.random() * max);
+    init();
 }
 
-function go()
-{
-    let text;
+var timer = 0;
+var textInterval;
 
-    switch(getRandomInt(3))
+function init()
+{
+    console.log('Hello world');
+    textInterval = setInterval(tickText, 1000);
+}
+
+function tickText()
+{
+    timer++;
+
+    var text = document.getElementById('text').innerHTML;
+
+    switch(timer)
     {
-        case 0:
-            text = 'Paf';
+        case getCurrentTime(0):
+            text = 'to my first site'
             break;
-        case 1:
-            text = 'Babebibobu';
+        case getCurrentTime(1):
+            text = 'My name is En0ri4n'
             break;
-        case 2:
-            text = "Ca alors";
+        case getCurrentTime(2):
+            text = 'I\'m a french developper';
+            break;
+        case getCurrentTime(3):
+            text = 'That\'s all...';
+            break;
+        case getCurrentTime(4):
+            text = 'Goodbye ! :)';
             break;
     }
+    
+    document.getElementById('text').innerHTML = text;
+}
 
-    document.getElementById('title').innerHTML = text;
+var start = 7;
+var duration = 3;
 
+function getCurrentTime(order)
+{
+    return start + (duration * order);
 }
