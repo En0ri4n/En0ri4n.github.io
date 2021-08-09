@@ -2,8 +2,10 @@ body {
     background-color: black;
     background-image: url('https://i.ibb.co/7yB8f9n/background.jpg');
     background-size: cover;
-    background-position-x: left;
-    background-position-y: top;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 #box {
@@ -44,17 +46,14 @@ body {
 
 #welcome-button {
     color: white;
-    position: relative;
 }
 
 #projects-button {
     color: white;
-    position: relative;
 }
 
 #contact-button {
     color: white;
-    position: relative;
 }
 
 #logo {
@@ -62,7 +61,7 @@ body {
     width: 512px;
     height: 64px;
     position: absolute;
-    top: calc(10vh / 2 - 64px / 2);
+    top: calc(10vh / 2 - 32px);
     left: 1vw;
     animation-name: logo-appear-move;
     animation-duration: 2s;
@@ -78,8 +77,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.text {
+#text {
     color: white;
+    white-space: pre-line;
     position: relative;
     text-align: center;
     font-size: 30;

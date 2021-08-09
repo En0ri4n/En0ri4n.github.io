@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    background-image: url('https://i.ibb.co/7yB8f9n/background.jpg');
+    background-size: cover;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#menu {
+    opacity: 1;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 25;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    grid-template-areas: ". . ."; 
+    gap: 100px;
+    margin-right: 5px;
+    top: calc(10vh / 2 - 32px / 2);
+    width: 30vw;
+    height: 32px;
+    left: calc(99vw - 30vw);
+}
+
+#welcome-button {
+    color: white;
+}
+
+#projects-button {
+    color: white;
+}
+
+#contact-button {
+    color: white;
+}
+
+#logo {
+    opacity: 1;
+    width: 512px;
+    height: 64px;
+    position: absolute;
+    top: calc(10vh / 2 - 32px);
+    left: 1vw;
+}
