@@ -25,14 +25,12 @@ body {
     font-weight: bolder;
     font-size: 25;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr; 
     grid-template-areas: ". . ."; 
     gap: 100px;
-    top: calc(10vh / 2 - 32px / 2);
+    top: calc(10vh / 2 - 16px);
     width: 30vw;
     height: 32px;
-    left: calc(49vw - 30vw);
+    left: 19vw;
     animation-name: menu-move;
     animation-duration: 2s;
     animation-delay: 3s;
