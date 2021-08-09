@@ -78,9 +78,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#text {
+.text {
     color: white;
-    white-space: pre-line;
     position: relative;
     text-align: center;
     font-size: 30;
