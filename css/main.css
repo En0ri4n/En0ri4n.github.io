@@ -1,10 +1,7 @@
 body {
     background-image: url('https://i.ibb.co/7yB8f9n/background.jpg');
     background-size: cover;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
 }
 
 #box {
@@ -26,12 +23,12 @@ body {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+    font-size: 25;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr; 
     grid-template-areas: ". . ."; 
     gap: 100px;
-    font-size: 25;
     top: calc(10vh / 2 - 32px / 2);
     width: 30vw;
     height: 32px;
